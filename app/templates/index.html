@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block stylesheet %}{% endblock %}
+{% block title %}Pick a story!{% endblock %}
+
+{% block content %}
+	<div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -58%)">
+		<h1 class="text-dark display-4 text-center">
+			Pick your story!
+		</h1>
+		<div class="container w-75 d-flex justify-content-around mt-4">
+			<div class="row d-flex flex-column">
+				<a class="h5 px-2 text-dark text-center text-decoration-none" href="/wrecks">Piltenes pilsdrupas</a>
+				<img class="mt-2 w-50 mx-auto" src="{{ url_for('static', filename='img/wrecks.png') }}" alt=""/>
+			</div>
+			<div class="row d-flex flex-column">
+				<a class="h5 px-2 text-dark text-center text-decoration-none" href="/staircase">Zlēkas staircase</a>
+				<img class="mt-2 w-50 mx-auto" src="{{ url_for('static', filename='img/staircase.png') }}" alt=""/>
+			</div>
+		</div>
+	</div>
+{% endblock %}
